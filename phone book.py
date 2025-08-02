@@ -30,6 +30,36 @@ def initial_phonebook():
                             temp[j] = None
                             phonebook.append(temp)
     return phonebook
+ def menu():
+     print ("t/t/tSMARTPHONE DIRECTORY,flush=false")
+     print("/t you can now perform the following operations on this phone book/n")
+
+     print("1.add new contact")
+     print("2.remove all existing contacts")
+     print("3.delete all contacts")
+     print("4.search for a contact")
+     print("5.display all contacts")
+     print("6.exit phone book")
+     choice= int(input("please enter your choice:"))
+      return choice
+def add_contact(phonebook):
+    dip=[]
+    for i in range(len(pb[0])): 
+         	if i == 0: 
+			dip.append(str(input("Enter name: "))) 
+		if i == 1: 
+            dip.append(str(input("Enter phone number: ")))
+        if i == 2:
+            dip.append(str(input("enter e-mail address: ")))
+        if i == 3:
+            dip.append(str(input("Enter date of birth(dd/mm/yy): ")))
+        if i == 4:
+            dip.append(str(input("Enter family category(family/friends/work/others): ")))
+    phonebook.append(dip)
+     return phonebook
+def remove_ existing (phone book):
+   query = str(input("Enter name of contact to be removed: "))
+   temp = 0
 
 
-                
+            
